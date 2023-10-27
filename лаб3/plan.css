@@ -1,0 +1,110 @@
+.body {
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+.h1 {
+    font-size: 20px;
+}
+.forgot_link {
+display: block;
+margin-bottom: 10px;
+font-size: 14px;
+color: #bababa;
+font-weight: 700;
+text-decoration: none;
+transition: .2s;
+}
+.forgot_link:hover { 
+color: #838383;
+}
+.form-box {
+    width: 800px;
+    padding: 60px;
+    
+    position: absolute;
+    box-shadow: -15px 53px 68px -9px rgba(0,0,0,0.75);
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    top: 60%;
+    left: 20%;
+    transform: translateY(-50%);
+    background: #fff;
+    text-align: center;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+ .form-box select, .form-box input[type = "text"], .form-box input[type = "password"], .form-box input[type = "tel"], .form-box input[type = "email"], .form-box input[type = "date"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #6856eb;
+    padding: 14px 15px;
+    width: 500px;
+    outline: none;
+    transition: 0.25s;
+}
+        .form-box input[type = "text"]:focus, .form-box input[type = "password"]:focus, .form-box input[type = "tel"]:focus, .form-box input[type = "email"]:focus, .form-box input[type = "date"]:focus {
+            width: 250px;
+            border-color: #b44bd3;
+        }
+.form-box input[type = "submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #b44bd3;
+    width: 230px;
+    height: 30px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.form-box button {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #19f1c5;
+    width: 200px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+}
+.form-box textarea {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+    border: 2px solid #6856eb;
+    padding: 14px 15px;
+    width: 500px;
+    outline: none;
+    transition: 0.25s;
+}
+.form box input[type = "submit"]:hover {
+    background: #9a5edc;
+}
+@media only screen and (max-width: 1025px) {
+.bg_img {
+display: none;
+}
+body {
+background: #7213da;
+}
+.form-box {
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+}

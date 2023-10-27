@@ -1,0 +1,34 @@
+<Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="plan.css">
+</head>
+<body background="u.jpg">
+    <div class="form-container">
+        <form action="index.html" class="form-box">
+            <button type="button" onclick="alert('Здесь будет большой текст:)<3')">О сайте</button>
+            <div class="h1">Регистрация</div>
+            <input type="text" id="form_name" name="" placeholder="Имя">
+            <input type="text" name="" placeholder="Фамилия">
+            <input type="tel" name="" placeholder="Номер телефона">
+            <input type="email" name="" placeholder="Электронная почта">
+            <label for="form_name">Дата рождения:</label>
+            <input type="date" name="" placeholder="Дата рождения">
+            <select name="pol" required>
+                <option value="">Пол</option>
+                <option value="1">Ж</option>
+                <option value="2">М</option>
+            </select>
+            <input type="text" name="" placeholder="Логин">
+            <input type="password" name="" placeholder="Пароль">
+            <p>Расскажите о себе<textarea cols="80" name="comments" maxlength="200"></textarea></p>
+            <input type="submit" name="" value="Зарегистрироваться">
+            <a href="#" class="forgot_link">У вас уже есть профиль?</a>
+            <p>Progress: <progress id="p" max="100"><span>0</span>%</progress></p>
+        </form>
+</div>
+</body>
+</html>
