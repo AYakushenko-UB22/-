@@ -1,0 +1,82 @@
+.contener {
+    width: 1200px;
+    height: 500px;
+    border: 1px solid #000000;
+    margin: 100px auto;
+    position: relative;
+    background: #000000;
+   perspective: 400px;
+}
+.incircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #000000;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.animation_circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    left: 400px;
+    bottom: 200px;
+    animation-name: circle;
+    animation-duration: 1.5s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+   
+}
+.animation_kiy {
+    width: 400px;
+    height: 15px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 250px;
+    animation-name: kiy;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+ 
+}
+
+@keyframes circle {
+
+    0% {
+        left: 400px;
+       
+    }
+    50% {
+       
+    }
+    100% {
+
+        transform: rotate(720deg);
+        left: 1000px;
+    }
+
+}
+@keyframes kiy {
+
+    0% {
+        left: -1000px;
+    }
+
+    100% {
+        left: 0;
+    }
+}

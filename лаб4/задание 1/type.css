@@ -1,0 +1,179 @@
+.contener {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000000;
+    margin: 100px auto;
+    position: relative;
+    background: #0ad8e5;
+}
+.dom {
+    width: 200px;
+    height: 180px;
+    border: 2px solid #000000;
+    background: #7a4e00;
+    left: 100px;
+    bottom: 0;
+    position: absolute;
+}
+.window {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #000000;
+    background: #ffffff;
+    left: 210px;
+    bottom: 80px;
+    position: absolute;
+}
+.roof {
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 100px solid #051987;
+    left: 90px;
+    bottom: 180px;
+    position: absolute;
+}
+.door {
+    width: 60px;
+    height: 150px;
+    border: 2px solid #000000;
+    background: #521616;
+    left: 130px;
+    bottom: 0;
+    position: absolute;
+}
+.tub {
+    width: 30px;
+    height: 40px;
+    border: 2px solid #000000;
+    background: #7a4e00;
+    left: 120px;
+    bottom: 205px;
+    position: absolute;
+}
+.ruk {
+    width: 5px;
+    height: 3px;
+    border: 1px solid #000000;
+    background: #000000;
+    left: 170px;
+    bottom: 80px;
+    position: absolute;
+}
+.stav {
+    width: 2px;
+    height: 70px;
+    border: 1px solid #000000;
+    background: #000000;
+    left: 244px;
+    bottom: 80px;
+    position: absolute;
+}
+.stavn {
+    width: 70px;
+    height: 2px;
+    border: 1px solid #000000;
+    background: #000000;
+    left: 210px;
+    bottom: 113px;
+    position: absolute;
+}
+.dim {
+    width: 30px;
+    height: 30px;
+    background: #808080;
+    border-radius: 50%;
+    left: 120px;
+    bottom: 250px;
+    position: absolute;
+}
+.dim1 {
+    width: 40px;
+    height: 40px;
+    background: #808080;
+    border-radius: 50%;
+    left: 110px;
+    bottom: 270px;
+    position: absolute;
+}
+.dim2 {
+    width: 50px;
+    height: 50px;
+    background: #808080;
+    border-radius: 50%;
+    left: 100px;
+    bottom: 290px;
+    position: absolute;
+}
+.dim3 {
+    width: 60px;
+    height: 60px;
+    background: #808080;
+    border-radius: 50%;
+    left: 80px;
+    bottom: 310px;
+    position: absolute;
+}
+.sun {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000000;
+    background: #ffd800;
+    border-radius: 50%;
+    left: 390px;
+    bottom: 390px;
+    position: absolute;
+}
+.stvol {
+    width: 10px;
+    height: 50px;
+    border: 1px solid #000000;
+    background: #7a4e00;
+    left: 395px;
+    bottom: 0;
+    position: absolute;
+}
+.elka {
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 90px solid #003e07;
+    left: 310px;
+    bottom: 40px;
+    position: absolute;
+}
+.elka1 {
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 70px solid #003e07;
+    left: 330px;
+    bottom: 110px;
+    position: absolute;
+}
+.elka2 {
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid #003e07;
+    left: 350px;
+    bottom: 165px;
+    position: absolute;
+}
+.earth {
+    width: 500px;
+    height: 10px;
+    border: 1px solid #000000;
+    background: #201001;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
