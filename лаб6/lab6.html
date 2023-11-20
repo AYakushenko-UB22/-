@@ -1,0 +1,89 @@
+<Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="plan.css">
+</head>
+<body background="u.jpg">
+    <div class="form-container">
+        <form action="lab6.html" class="form-box" id="form-box" method="post" onsubmit="test(document.getElementById('form-box'))">
+            <button type="button" onclick="alert('Здесь будет большой текст:)<3')">О сайте</button>
+            <div class="h1">Регистрация</div>
+            <input type="text" id="name" name="name" placeholder="Имя">
+            <input type="text" name="sname" id="sname" placeholder="Фамилия">
+            <input type="tel" name="tel" id="tel" placeholder="Номер телефона">
+            <input type="email" name="email" id="email" placeholder="Электронная почта">
+            <label for="form_name">Дата рождения:</label>
+            <input type="date" name="date" id="date" placeholder="Дата рождени">
+           
+            <select name="pol" id="pol">
+                <option value="">Пол</option>
+                <option value="женский">Ж</option>
+                <option value="мужской">М</option>
+            </select>
+            <input type="text" name="log" id="log" placeholder="Логин">
+            <input type="password" name="pass" id="pass" placeholder="Пароль">
+            <p>Расскажите о себе<textarea cols="80" name="comm" id="comm" maxlength="200"></textarea></p>
+            <span id="error" style="color: red"></span>
+            <input type="submit" name="sub" id="sub" value="Зарегистрироваться"  >
+            <a href="#" class="forgot_link">У вас уже есть профиль?</a>
+            <p>Progress: <progress id="p" max="100"><span>0</span>%</progress></p>
+        </form>
+</div>
+<script>
+     function reloadPage() {
+        location.reload();
+        }
+
+function test(form){
+        event.preventDefault();
+
+var name = form.name.value;
+var sname = form.sname.value;
+var tel = form.tel.value;
+var email = form.email.value;
+var date = form.date.value;
+var pol = form.pol.value;
+var log = form.log.value;
+var pass = form.pass.value;
+var comm = form.comm.value;
+const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+const regexp = /(?:\+|\d)[\d\-\(\) ]{9,}\d/g;
+const n = /^[a-zA-Zа-яА-Я\-]+$/;
+const p = /^[a-zA-Z0-9\-]+$/;
+
+var fail = false;
+
+
+if (name == "" || name == " " || n.test(name) == false)
+fail="Введите имя, содержащее только символы алфавита"
+else if(sname == "" || sname ==" " || n.test(sname) == false)
+fail="Введите фамилию, содержащую только символы алфавита"
+else if(tel == "" || regexp.test(tel) == false)
+fail="Введите корректный номер телефона: +7..."
+else if(email == "" || re.test(email) == false)
+fail="Введите корректную электронную почту"
+else if(date == "")
+fail="Введите дату рождения"
+else if(pol == "")
+fail="Выберите ваш пол"
+else if(log == "" || log ==" " )
+fail="Введите логин"
+else if(pass == "" || pass ==" " || pass.length < 8 || p.test(pass) == false)
+fail="Введите корректный пароль, состоящий из 8 символов алфавита и цифр"
+
+if(fail){
+    document.getElementById('error').innerHTML = fail;
+} else{
+    alert("Имя: " + name + "\nФамилия: " + sname + "\nНомер телефона: " + tel + "\nПочта: " + email + "\nДата рождения: " + date + "\nПол: " + pol + "\nЛогин: " + log + "\nПароль: " + pass + "\nО себе: " + comm);
+    reloadPage(form) 
+    }
+
+}
+
+   
+</script>
+</body>
+</html>
